@@ -8,10 +8,10 @@ var loadTasks = function () {
   }
   printTasks(tasks);
 };
-
+// added parse/int to allow to grab text from textareas
 var printTasks = function () {
   $.each(tasks, function (list, arr) {
-    var newList = parseInt(list) + 8
+    var newList = parseInt(list) + 9
     $("#task-" + newList).text(arr);
   });
 };
